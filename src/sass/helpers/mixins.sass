@@ -1,0 +1,19 @@
+.for-button
+    display: inline-block
+    padding: 10px 30px
+    background-color: #ffb700
+    border-radius: 25px
+    text-align: center
+    .my-button
+        font-size: 16px
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: #fdfcfb
+        font-weight: 400
+        font-family: "Rubik"
+
+
+@mixin media($size)
+    @media screen and (min-width: #{$size}px)
+        @content
+

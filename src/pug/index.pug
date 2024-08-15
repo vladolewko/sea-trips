@@ -1,0 +1,74 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        title ЗМІНИ ЦЕ!!!
+    body 
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main 
+            .container-fluid
+                .container.activities
+                    .row
+                        .more.col-sm-12.col-lg-3
+                            h2 про нашу компанію
+                            p Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                            +main-button 
+                            p.comment * - зверніть увагу, зміна ціни може залежати від курсу долара.
+                        +card
+                        +card
+                        +card
+                    .row.see-more.justify-content-center
+                        a.col-2(href="#") дивитись усі плани 
+                    .row.big-figure
+                        img.col-lg-2.col-sm-12(src="img/island.jpg", alt="")
+                        .information.col-lg-8.col-sm-12
+                            h2 Дивовижний безлюдний острів, який зводить людей з розуму
+                            .info.d-flex.justify-content-between
+                                .description.col-lg-6.col-sm-12
+                                    p Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                                    .buttons.d-flex.gap-2.col-sm-12.d-none
+                                        +main-button 
+                                        +main-button 
+                                .price-card.col-lg-5.col-sm-12.d-none
+                                    a(href="#") 575 грн./день
+                                    p В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+                .row.quote
+                    .container
+                        .row.justify-content-between
+                            .col-5 
+                                h3 СПІЙМАЙ ХВИЛЮ
+                                    h4 ЖИВИ ЯСКРАВО!
+                                p.par Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                                +main-button
+                            .col-5.oleg
+                                <svg class="svg" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 37" width="42" height="37"><style>.a{fill:#ffb700}</style><path class="a" d="m39.8 0h-13c-1.2 0-2.2 1-2.2 2.1v13.1c0 1.2 1 2.2 2.2 2.2h6.2q-0.1 5.1-2.4 8.2-1.8 2.4-5.4 4c-1.1 0.5-1.6 1.8-1 2.9l1.5 3.3c0.5 1 1.8 1.5 2.8 1q4.3-1.8 7.2-4.7 3.6-3.4 5-7.8 1.3-4.3 1.3-11.9v-10.3c0-1.1-1-2.1-2.2-2.1zm-35.2 36.8q4.2-1.8 7.2-4.7 3.6-3.4 4.9-7.7 1.3-4.4 1.3-12v-10.3c0-1.1-0.9-2.1-2.1-2.1h-13.1c-1.2 0-2.2 1-2.2 2.1v13.1c0 1.2 1 2.2 2.2 2.2h6.3q-0.2 5.1-2.4 8.2-1.8 2.4-5.4 4c-1.1 0.5-1.6 1.8-1.1 2.9l1.6 3.3c0.5 1 1.7 1.5 2.8 1z"/></svg>
+                                q Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                                p.author Олег Набережний
+                                p.customer клієнт
+                                img.man(src="img/oleg.png", alt="")
+                .row 
+                    .container
+                            .row.name-of-article
+                                h2 Спеціальні пропозиції тижня
+                                p Гарячі праозиції, по-швидше обирай і поїхали!
+                            .row.justify-content-between
+                                +second-card("../img/second-figure1.jpg")
+                                +second-card("../img/second-figure2.jpg")
+                                +second-card("../img/second-figure3.jpg")
+                                +second-card("../img/second-figure4.jpg")
+                        
+
+
+
+        include components/footer.pug
+        script(src="js/scripts.js")

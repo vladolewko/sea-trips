@@ -1,0 +1,24 @@
+mixin logotipe
+    .logo.d-flex.align-items-center.g-10.col-2
+        img.h-5.logo-img(src="img/logo.png", alt="logo")
+        a.navbar-brand.navig-item(href="#") trips
+mixin main-button 
+    .for-button.bg-warning
+        a.my-button детальніше
+
+mixin card 
+    figure.col-lg-3.col-sm-10.m-auto.first-card
+        img(src="img/figure1.png", alt="")
+        h2 Тур на велосипедах
+        a(href="#") 335 грн*
+        p Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.
+
+mixin second-card($path="../img/second-figure1.jpg")
+    figure.col-sm-12.col-md-6.col-lg-3.second.figure
+        img.card-img(src=$path , alt="")
+        .about
+            h3 Романтична подорож на 2
+            p Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.
+            .order.d-flex.align-items-center.justify-content-between
+                p 2599 грн.
+                a(href="#") замовити
