@@ -1,19 +1,26 @@
-.for-button
-    display: inline-block
-    padding: 10px 30px
-    background-color: #ffb700
+
+.my-button
+    max-width: 180px
     border-radius: 25px
     text-align: center
-    .my-button
-        font-size: 16px
-        letter-spacing: 1px
-        text-transform: uppercase
-        color: #fdfcfb
-        font-weight: 400
-        font-family: "Rubik"
+    display: inline-block
+    padding: 10px 30px
+    font-size: 16px
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: #fdfcfb
+    background-color: #ffb700
+    font-weight: 400
+    font-family: "Rubik"
+    transition: .3s
+    &:hover
+        background-color: #fff
+        border: 2px #ffb700 solid
+        color: #ffb700
 
 
 @mixin media($size)
     @media screen and (min-width: #{$size}px)
         @content
+
 

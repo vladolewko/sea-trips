@@ -1,10 +1,10 @@
 header.background
-    nav.navbar.navbar-expand-lg.navig.m-auto
+    nav.container.navbar.navbar-expand-lg.navig
         .container-fluid
             .navbar-brand.navig-item
                 +logotipe
             button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-                span.navbar-toggler-icon
+                span.navbar-toggler-icon.burger#burger
             #navbarNav.collapse.navbar-collapse.flex-grow-0
                 ul.navbar-nav.gap-3
                     li.nav-item
@@ -22,7 +22,7 @@ header.background
                     li.nav-item
                         a.nav-link.navig-item(href='#') Контакти
 
-    .container.m-auto.text-center.col-8.header-info
+    .container.m-auto.text-center.col-8.header-info.align-items-center
         h1 Морські пригоди
         p.paragraph Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
         +main-button  

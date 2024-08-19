@@ -8,7 +8,9 @@
 
 .navig
     max-width: 100%
-    margin-bottom: 150px
+    margin-bottom: 75px
+    +media(1024)
+        margin-bottom: 150px
     li
         font-size: 14px
         letter-spacing: 1px
@@ -20,7 +22,34 @@
             color: #ffb700
     .navig-item
         color: #fff
-
+.burger
+    position: relative
+    background-color: #fff
+    width: 35px
+    height: 7px
+    border-radius: 2px
+    transition: .3s
+    border: none
+    &::before
+        content: ""
+        position: absolute
+        top: -12px
+        left: 0
+        height: 7px
+        width: 35px
+        background-color: #fff
+        border-radius: 2px
+    &::after
+        content: ""
+        position: absolute
+        bottom: -12px
+        left: 0
+        height: 7px
+        width: 35px
+        background-color: #fff
+        border-radius: 2px
+.touched
+    transform: rotate(90deg)
 h1
     margin-bottom: 30px
     font-size: 42px
