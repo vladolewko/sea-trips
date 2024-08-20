@@ -272,6 +272,7 @@ figure.first-card
         text-align: center
 
 .second-figure
+    position: relative
     transition: .3s
     &:hover
         background-color: #fff
@@ -293,21 +294,29 @@ figure.first-card
         position: absolute
         left: -60px
         top: -60px
-        width: 120px
-        height: 120px
+        width: 106px
+        height: 105px
         transform: rotate(45deg)
         background-color: #26cb15
+        z-index: 2
     &::after 
         content: ""
         position: absolute
-        background-image: url(../img/star-svgrepo-com.svg)
         left: 0
         top: 0
-        width: 15px
-        height: 15px
-        z-index: 222
+        width: 60px
+        height: 100%
+        background-color: #0099ff
     img
         width: 100%
+
+.star
+    position: absolute
+    left: 9px
+    top: 9px
+    width: 16px
+    height: 16px
+    z-index: 3
 
 .about
     margin: auto
@@ -382,7 +391,7 @@ figure.first-card
         position: absolute
         left: 0
         top: 0
-        height: 90%
+        height: 100%
         width: 48px
         border-left: 4px #ffb700 solid
         border-top: 4px #ffb700 solid
@@ -392,7 +401,7 @@ figure.first-card
         position: absolute
         right: 0
         top: 0
-        height: 90%
+        height: 100%
         width: 48px
         border-right: 4px #ffb700 solid
         border-top: 4px #ffb700 solid
@@ -433,10 +442,14 @@ figure.first-card
     .place
         margin-bottom: 15px
     .person
+        position: absolute
+        bottom: -35px
+        left: 50%
+        transform: translateX(-50%)
         border-radius: 50%
 
 .third-card
-    max-width: 270px
+    min-width: 290px
     padding: 30px 20px
     background: linear-gradient(-180deg, rgba(20, 47, 63, 0.4) 0%,rgba(20, 47, 63, 0.4) 100%), url("../img/figurebg1.jpg") 0/cover
     >p
