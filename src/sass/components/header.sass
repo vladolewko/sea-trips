@@ -1,5 +1,5 @@
 .background
-    height: 937px
+    min-height: 90vh
     background: url("../img/bgsea.png")
     background-size: 100% 100%
 
@@ -12,7 +12,8 @@
     +media(1024)
         margin-bottom: 150px
     li
-        font-size: 14px
+        padding: 0 13px
+        font-size: 14rem
         letter-spacing: 1px
         text-transform: uppercase
         font-weight: 400
@@ -21,6 +22,10 @@
             color: #ffb700
     .navig-item
         color: $lightColor
+.logo a
+    font-size: 36px
+.navbar-toggler
+    box-shadow: none!important
 .burger
     position: relative
     background-color: $lightColor
@@ -49,11 +54,11 @@
         border-radius: 2px
 .touched
     transform: rotate(90deg)
-h1
+h1.main
     margin-bottom: 30px
-    font-size: 42px
+    font-size: 42rem
     +media(1024)
-        font-size: 72px
+        font-size: 72rem
     letter-spacing: 1px
     text-transform: uppercase
     color: $lightColor
@@ -62,7 +67,7 @@ h1
 .paragraph
     margin: auto
     margin-bottom: 30px
-    font-size: 16px
+    font-size: 16rem
     max-width: 500px
     line-height: 24px
     color: $lightColor
@@ -105,43 +110,42 @@ h1
     bottom: 0
     left: 50%
     max-width: 320px
-    transform: translate(-50%, 50%)
-    +media(1024)
-        transform: translate(-50%, 0%)
-        padding-bottom: 50px
-    +media(1240)
-        transform: translate(-50%, 0%)
-        padding-bottom: 50px
+    transform: translate(-50%, -50%)
     padding-bottom: 25px
+    +media(540)
+        bottom: 50px
     +media(1440)
-        transform: translate(-50%, -100%)
         padding-bottom: 50px
     h2
-        font-size: 36px
+        font-size: 36rem
         letter-spacing: 1px
         text-transform: uppercase
         color: #333
         font-weight: 400
         text-align: center
+        margin-bottom: 25px
     p
-        font-size: 16px
+        font-size: 16rem
         line-height: 24px
         color: #333
         font-weight: 400
         font-style: italic
         text-align: center
+        margin-bottom: 15px
+        +media(720)
+            margin-bottom: 35px
     .arrow1,.arrow2
         position: absolute
         width: 20px
         height: 20px
         border-left: 3px #000 solid
         border-bottom: 3px #000 solid
-        transform: rotate(-45deg)
+        transform: translateX(-50%) rotate(-45deg)
     .arrow1
-        bottom: 15px
+        bottom: 5px
         left: 50%
     .arrow2
-        bottom: 25px
+        bottom: 15px
         left: 50%
 
 
